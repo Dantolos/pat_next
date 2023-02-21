@@ -1,0 +1,19 @@
+.headercontainer {
+     position: fixed;
+     top:0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width:100vw;
+     background: rgb(17, 17, 17);
+     color:white;
+     padding:20px;
+     height:10dvh;
+     box-shadow: -1px -1px 90px 8px rgba(0,0,0,0.75);
+     -webkit-box-shadow: -1px -1px 90px 8px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px -1px 90px 8px rgba(0,0,0,0.75);
+}
+
+.logo {
+     margin: 0;
+}

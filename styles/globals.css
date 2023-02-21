@@ -23,8 +23,9 @@ img {
 h1,
 h2,
 p,
+a,
 ul {
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 ul {
@@ -35,4 +36,52 @@ ul {
 button {
   padding: 0.5rem 1rem;
   font-weight: bold;
+}
+
+
+
+
+a {
+  color:#FF005C;
+}
+
+a:hover {
+  color:#08FFD3;
+}
+
+main {
+  width: 100dvw;
+  height:80dvh;
+  background-color: #111;
+  margin-top:10vh;
+  color:white;
+  
+  display:flex;
+  
+}
+
+
+.content {
+  padding: 5%;
+  overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF005C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF005C;
 }
