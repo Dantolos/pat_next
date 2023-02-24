@@ -21,5 +21,6 @@ export const getStaticProps = async () => {
     props: {
       Classes: res.data,
     },
+    revalidate: 10,
   };
 };

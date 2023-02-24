@@ -29,6 +29,7 @@ export const getStaticProps = async ({ params }) => {
           props: {
                Race: res.data[0],
           },
+          revalidate: 10,
      };
 };
 

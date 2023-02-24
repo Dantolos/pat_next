@@ -29,8 +29,9 @@ export const getStaticProps = async () => {
 
      return {
           props: {
-          Classes: res.data,
+               Classes: res.data,
           },
+          revalidate: 10,
      };
 };
 
