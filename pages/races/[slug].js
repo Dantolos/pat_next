@@ -4,10 +4,14 @@ import directus from "../../lib/directus";
 
 export default function ClassPage({Race}){
      const router = useRouter()
-   
+     if (router.isFallback) {
+          return <div>Loading...</div>
+        }
+        
      return (
           <div>
                <Link href="/races"><span>zurück</span></Link>
+               <div style={{borderBottom: '2px solid black', margin: '20px 0' }}></div>
                <h1>{ Race.Race }</h1>
                
                <div style={{display: 'flex'}}>
@@ -45,7 +49,6 @@ export const getStaticPaths = async () => {
                     slug: post.slug,
                },
           })),
-
           fallback: true,
      };
 };

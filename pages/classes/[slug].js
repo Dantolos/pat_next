@@ -21,7 +21,6 @@ export const getStaticProps = async ({ params }) => {
           filter: { slug: params.slug },
           fields: ["Description", "Class", "id", "slug"],
      });
-     console.log(res.data[0])
 
      return {
           props: {

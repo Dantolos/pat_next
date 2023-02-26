@@ -3,7 +3,6 @@ import directus from "../../lib/directus";
 import Link from "next/link";
 
 export default function Home( { Races } )  {
-     console.log(Races)
      return (
           <div>
                <h1>Pen and Table</h1>
