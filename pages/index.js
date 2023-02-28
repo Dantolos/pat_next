@@ -6,7 +6,9 @@ import Link from "next/link";
 export default function Home( { Classes } ) {
   console.log(Classes)
   return (
-    <home>asdf</home>
+    <home>
+      <h1>Pen&Table</h1>
+    </home>
   )
 }
 
